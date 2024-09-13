@@ -1,0 +1,982 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="https://dl.acm.org/doi/10.1145/3569468">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2474-9567"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Liberis</foaf:surname>
+                        <foaf:givenName>Edgar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lane</foaf:surname>
+                        <foaf:givenName>Nicholas D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_65"/>
+        <dc:title>Differentiable Neural Network Pruning to Enable Smart Applications on Microcontrollers</dc:title>
+        <dcterms:abstract>Wearable, embedded, and IoT devices are a centrepiece of many ubiquitous computing applications, such as fitness tracking, health monitoring, home security and voice assistants. By gathering user data through a variety of sensors and leveraging machine learning (ML), applications can adapt their behaviour: in other words, devices become &quot;smart&quot;. Such devices are typically powered by microcontroller units (MCUs). As MCUs continue to improve, smart devices become capable of performing a non-trivial amount of sensing and data processing, including machine learning inference, which results in a greater degree of user data privacy and autonomy, compared to offloading the execution of ML models to another device.
+            Advanced predictive capabilities across many tasks make neural networks an attractive ML model for ubiquitous computing applications; however, on-device inference on MCUs remains extremely challenging. Orders of magnitude less storage, memory and computational ability, compared to what is typically required to execute neural networks, impose strict structural constraints on the network architecture and call for specialist model compression methodology. In this work, we present a differentiable structured pruning method for convolutional neural networks, which integrates a model's MCU-specific resource usage and parameter importance feedback to obtain highly compressed yet accurate models. Compared to related network pruning work, compressed models are more accurate due to better use of MCU resource budget, and compared to MCU specialist work, compressed models are produced faster. The user only needs to specify the amount of available computational resources and the pruning algorithm will automatically compress the network during training to satisfy them.
+            We evaluate our methodology using benchmark image and audio classification tasks and find that it (a) improves key resource usage of neural networks up to 80x; (b) has little to no overhead or even improves model training time; (c) produces compressed models with matching or improved resource usage up to 1.4x in less time compared to prior MCU-specific model compression methods.</dcterms:abstract>
+        <dc:date>2022-12-21</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://dl.acm.org/doi/10.1145/3569468</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-26 00:02:29</dcterms:dateSubmitted>
+        <bib:pages>1-19</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2474-9567">
+        <prism:volume>6</prism:volume>
+        <dc:title>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies</dc:title>
+        <dc:identifier>DOI 10.1145/3569468</dc:identifier>
+        <prism:number>4</prism:number>
+        <dcterms:alternative>Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.</dcterms:alternative>
+        <dc:identifier>ISSN 2474-9567</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_65">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Available Version (via Google Scholar)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://dl.acm.org/doi/pdf/10.1145/3569468</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-26 00:02:36</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2106.10652">
+        <z:itemType>preprint</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zim</foaf:surname>
+                        <foaf:givenName>Md Ziaul Haque</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_67"/>
+        <link:link rdf:resource="#item_66"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Hardware Architecture</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>TinyML: Analysis of Xtensa LX6 microprocessor for Neural Network Applications by ESP32 SoC</dc:title>
+        <dcterms:abstract>In recent decades, Machine Learning (ML) has become extremely important for many computing applications. The pervasiveness of ultra-low-power embedded devices such as ESP32 or ESP32 Cam with tiny Machine Learning (tinyML) applications will enable the mass proliferation of Artificial Intelligent powered Embedded IoT Devices. In the last few years, the microcontroller device (Espressif ESP32) became powerful enough to be used for small/tiny machine learning (tinyML) tasks. The ease of use of platforms like Arduino IDE, MicroPython and TensorFlow Lite (TF) with tinyML application make it an indispensable topic of research for mobile robotics, modern computer science and electrical engineering. The goal of this paper is to analyze the speed of the Xtensa dual core 32-bit LX6 microprocessor by running a neural network application. The different number of inputs (9, 36, 144 and 576) inputted through the different number of neurons in neural networks with one and two hidden layers. Xtensa LX6 microprocessor has been analyzed because it comes inside with Espressif ESP32 and ESP32 Cam which are very easy to use, plug and play IoT device. In this paper speed of the Xtensa LX6 microprocessor in feed-forward mode has been analyzed.</dcterms:abstract>
+        <dc:date>2021-06-20</dc:date>
+        <z:shortTitle>TinyML</z:shortTitle>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2106.10652</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-26 00:02:27</dcterms:dateSubmitted>
+        <dc:description>arXiv:2106.10652 [cs]</dc:description>
+        <dc:identifier>DOI 10.13140/RG.2.2.28602.11204</dc:identifier>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_67">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>arXiv Fulltext PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2106.10652.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-26 00:02:30</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_66">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>arXiv.org Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/abs/2106.10652</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-26 00:02:35</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:BookSection rdf:about="urn:isbn:978-3-030-43363-5%20978-3-030-43364-2">
+        <z:itemType>bookSection</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Book>
+                <prism:volume>1187</prism:volume>
+                <dc:identifier>ISBN 978-3-030-43363-5 978-3-030-43364-2</dc:identifier>
+                <dc:title>Intelligent Computing Systems</dc:title>
+            </bib:Book>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Cham</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>Springer International Publishing</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Brito-Loeza</foaf:surname>
+                        <foaf:givenName>Carlos</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Espinosa-Romero</foaf:surname>
+                        <foaf:givenName>Arturo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Martin-Gonzalez</foaf:surname>
+                        <foaf:givenName>Anabel</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Safi</foaf:surname>
+                        <foaf:givenName>Asad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dokic</foaf:surname>
+                        <foaf:givenName>Kristian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Radisic</foaf:surname>
+                        <foaf:givenName>Bojan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cobovic</foaf:surname>
+                        <foaf:givenName>Mirko</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>MicroPython or Arduino C for ESP32 - Efficiency for Neural Network Edge Devices</dc:title>
+        <dc:date>2020</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>http://link.springer.com/10.1007/978-3-030-43364-2_4</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-26 00:02:27</dcterms:dateSubmitted>
+        <dc:description>Series Title: Communications in Computer and Information Science
+DOI: 10.1007/978-3-030-43364-2_4</dc:description>
+        <bib:pages>33-43</bib:pages>
+    </bib:BookSection>
+    <rdf:Description rdf:about="https://ieeexplore.ieee.org/abstract/document/4481278/">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>2008 International Conference on Intelligent Engineering Systems</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>IEEE</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cotton</foaf:surname>
+                        <foaf:givenName>Nicholas J.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Wilamowski</foaf:surname>
+                        <foaf:givenName>Bogdan M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dundar</foaf:surname>
+                        <foaf:givenName>Gunhan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_71"/>
+        <dc:title>A neural network implementation on an inexpensive eight bit microcontroller</dc:title>
+        <dc:date>2008</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/abstract/document/4481278/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-25 23:03:15</dcterms:dateSubmitted>
+        <bib:pages>109–114</bib:pages>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_71">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Available Version (via Google Scholar)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.academia.edu/download/43510760/A_Neural_Network_Implementation_on_an_In20160308-19048-1osk1j7.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-25 23:03:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://repositorio-aberto.up.pt/bitstream/10216/69272/1/000155082.pdf">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sousa</foaf:surname>
+                        <foaf:givenName>Mário Martins de</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_81"/>
+        <dc:title>Autonomous paraglider for STRAPLEX</dc:title>
+        <dc:date>2012</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://repositorio-aberto.up.pt/bitstream/10216/69272/1/000155082.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-25 13:59:55</dcterms:dateSubmitted>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_81">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Available Version (via Google Scholar)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://repositorio-aberto.up.pt/bitstream/10216/69272/1/000155082.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-25 14:00:42</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="https://ieeexplore.ieee.org/abstract/document/7573255/">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>2016 IEEE Metrology for Aerospace (MetroAeroSpace)</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>IEEE</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Poli</foaf:surname>
+                        <foaf:givenName>Matteo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Madonna</foaf:surname>
+                        <foaf:givenName>Alberto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Donchev</foaf:surname>
+                        <foaf:givenName>Tihol</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Martignago</foaf:surname>
+                        <foaf:givenName>Diego</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pezzato</foaf:surname>
+                        <foaf:givenName>Mattia</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Trevisi</foaf:surname>
+                        <foaf:givenName>Filippo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Di Iorio</foaf:surname>
+                        <foaf:givenName>Eugenio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scalzi</foaf:surname>
+                        <foaf:givenName>Davide</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Nalin</foaf:surname>
+                        <foaf:givenName>Francesco</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stanco</foaf:surname>
+                        <foaf:givenName>Andrea</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Autonomous re-entry system technology demonstrator for sounding rockets: Development of an automated control system as recovery device for precise landing of sounding rockets</dc:title>
+        <dc:date>2016</dc:date>
+        <z:shortTitle>Autonomous re-entry system technology demonstrator for sounding rockets</z:shortTitle>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/abstract/document/7573255/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-25 13:59:40</dcterms:dateSubmitted>
+        <bib:pages>439–443</bib:pages>
+    </rdf:Description>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0273117719309305">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>65</prism:volume>
+                <dc:title>Advances in Space Research</dc:title>
+                <prism:number>7</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gaudet</foaf:surname>
+                        <foaf:givenName>Brian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Linares</foaf:surname>
+                        <foaf:givenName>Richard</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Furfaro</foaf:surname>
+                        <foaf:givenName>Roberto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_90"/>
+        <dc:title>Deep reinforcement learning for six degree-of-freedom planetary landing</dc:title>
+        <dc:date>2020</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0273117719309305</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 23:51:33</dcterms:dateSubmitted>
+        <dc:description>Publisher: Elsevier</dc:description>
+        <bib:pages>1723–1741</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_90">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Available Version (via Google Scholar)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/1810.08719</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 23:52:02</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0094576523003326">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>211</prism:volume>
+                <dc:title>Acta Astronautica</dc:title>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mulekar</foaf:surname>
+                        <foaf:givenName>Omkar S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cho</foaf:surname>
+                        <foaf:givenName>Hancheol</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bevilacqua</foaf:surname>
+                        <foaf:givenName>Riccardo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Neural network based feedback optimal control for pinpoint landers under disturbances</dc:title>
+        <dc:date>2023</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0094576523003326</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:47</dcterms:dateSubmitted>
+        <dc:description>Publisher: Elsevier</dc:description>
+        <bib:pages>353–367</bib:pages>
+    </bib:Article>
+    <bib:Article rdf:about="https://project-archive.inf.ed.ac.uk/msc/20172139/msc_proj.pdf">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal><dc:title>Master’s thesis</dc:title></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ferrante</foaf:surname>
+                        <foaf:givenName>Reuben</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_94"/>
+        <dc:title>A robust control approach for rocket landing</dc:title>
+        <dc:date>2017</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://project-archive.inf.ed.ac.uk/msc/20172139/msc_proj.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:45</dcterms:dateSubmitted>
+        <dc:description>Publisher: Artificial Intelligence School of Informatics University of Edinburgh</dc:description>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_94">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Available Version (via Google Scholar)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://project-archive.inf.ed.ac.uk/msc/20172139/msc_proj.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://link.springer.com/10.1007/s42064-022-0153-1">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2522-008X,%202522-0098"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Wenbo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Song</foaf:surname>
+                        <foaf:givenName>Yu</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cheng</foaf:surname>
+                        <foaf:givenName>Lin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gong</foaf:surname>
+                        <foaf:givenName>Shengping</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Closed-loop deep neural network optimal control algorithm and error analysis for powered landing under uncertainties</dc:title>
+        <dc:date>06/2023</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/10.1007/s42064-022-0153-1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:37</dcterms:dateSubmitted>
+        <bib:pages>211-228</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2522-008X,%202522-0098">
+        <prism:volume>7</prism:volume>
+        <dc:title>Astrodynamics</dc:title>
+        <dc:identifier>DOI 10.1007/s42064-022-0153-1</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>Astrodyn</dcterms:alternative>
+        <dc:identifier>ISSN 2522-008X, 2522-0098</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://ieeexplore.ieee.org/abstract/document/10415408/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal><dc:title>IEEE Access</dc:title></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Çelik</foaf:surname>
+                        <foaf:givenName>Ugurcan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Demirezen</foaf:surname>
+                        <foaf:givenName>Mustafa Umut</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:title>Optimal Reusable Rocket Landing Guidance: A Cutting-Edge Approach Integrating Scientific Machine Learning and Enhanced Neural Networks</dc:title>
+        <dc:date>2024</dc:date>
+        <z:shortTitle>Optimal Reusable Rocket Landing Guidance</z:shortTitle>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://ieeexplore.ieee.org/abstract/document/10415408/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:31</dcterms:dateSubmitted>
+        <dc:description>Publisher: IEEE</dc:description>
+    </bib:Article>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S027311772300563X">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>72</prism:volume>
+                <dc:title>Advances in Space Research</dc:title>
+                <prism:number>8</prism:number>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tang</foaf:surname>
+                        <foaf:givenName>Difei</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gong</foaf:surname>
+                        <foaf:givenName>Shengping</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_95"/>
+        <dc:title>Trajectory optimization of rocket recovery based on Neural Network and Genetic Algorithm</dc:title>
+        <dc:date>2023</dc:date>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S027311772300563X</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:33</dcterms:dateSubmitted>
+        <dc:description>Publisher: Elsevier</dc:description>
+        <bib:pages>3344–3356</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_95">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Available Version (via Google Scholar)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S027311772300563X</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:57</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-1-4503-7186-5">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>ISBN 978-1-4503-7186-5</dc:identifier>
+                <dc:title>Proceedings of the 2019 4th International Conference on Automation, Control and Robotics Engineering</dc:title>
+                <dc:identifier>DOI 10.1145/3351917.3351935</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>Shenzhen China</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>ACM</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Yifan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ma</foaf:surname>
+                        <foaf:givenName>Lin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_96"/>
+        <dc:title>Rocket Powered Landing Guidance Using Proximal Policy Optimization</dc:title>
+        <dc:date>2019-07-19</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://dl.acm.org/doi/10.1145/3351917.3351935</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:31</dcterms:dateSubmitted>
+        <bib:pages>1-6</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>CACRE2019: 2019 4th International Conference on Automation, Control and Robotics Engineering</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_96">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Available Version (via Google Scholar)</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/profile/Lin-Ma-26/publication/336004071_Rocket_Powered_Landing_Guidance_Using_Proximal_Policy_Optimization/links/5f03e6d4a6fdcc4ca452e274/Rocket-Powered-Landing-Guidance-Using-Proximal-Policy-Optimization.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-03-23 22:32:51</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.mdpi.com/2079-9292/9/10/1597">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2079-9292"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Guimarães</foaf:surname>
+                        <foaf:givenName>Caio José B. V.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fernandes</foaf:surname>
+                        <foaf:givenName>Marcelo A. C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_117"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>microcontrollers</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Multilayer Perceptron</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>neural networks</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>real-time</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Real-time Neural Networks Implementation Proposal for Microcontrollers</dc:title>
+        <dcterms:abstract>The adoption of intelligent systems with Artificial Neural Networks (ANNs) embedded in hardware for real-time applications currently faces a growing demand in fields such as the Internet of Things (IoT) and Machine to Machine (M2M). However, the application of ANNs in this type of system poses a significant challenge due to the high computational power required to process its basic operations. This paper aims to show an implementation strategy of a Multilayer Perceptron (MLP)-type neural network, in a microcontroller (a low-cost, low-power platform). A modular matrix-based MLP with the full classification process was implemented as was the backpropagation training in the microcontroller. The testing and validation were performed through Hardware-In-the-Loop (HIL) of the Mean Squared Error (MSE) of the training process, classification results, and the processing time of each implementation module. The results revealed a linear relationship between the values of the hyperparameters and the processing time required for classification, also the processing time concurs with the required time for many applications in the fields mentioned above. These findings show that this implementation strategy and this platform can be applied successfully in real-time applications that require the capabilities of ANNs.</dcterms:abstract>
+        <dc:date>2020/10</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.mdpi.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.mdpi.com/2079-9292/9/10/1597</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-07 20:15:00</dcterms:dateSubmitted>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <dc:description>Number: 10
+Publisher: Multidisciplinary Digital Publishing Institute</dc:description>
+        <bib:pages>1597</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2079-9292">
+        <prism:volume>9</prism:volume>
+        <dc:title>Electronics</dc:title>
+        <dc:identifier>DOI 10.3390/electronics9101597</dc:identifier>
+        <prism:number>10</prism:number>
+        <dc:identifier>ISSN 2079-9292</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_117">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.mdpi.com/2079-9292/9/10/1597/pdf?version=1601381309</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-07 20:15:05</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_119">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Banbury</foaf:surname>
+                        <foaf:givenName>Colby</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhou</foaf:surname>
+                        <foaf:givenName>Chuteng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fedorov</foaf:surname>
+                        <foaf:givenName>Igor</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Navarro</foaf:surname>
+                        <foaf:givenName>Ramon Matas</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thakker</foaf:surname>
+                        <foaf:givenName>Urmish</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gope</foaf:surname>
+                        <foaf:givenName>Dibakar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Reddi</foaf:surname>
+                        <foaf:givenName>Vijay Janapa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mattina</foaf:surname>
+                        <foaf:givenName>Matthew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Whatmough</foaf:surname>
+                        <foaf:givenName>Paul N</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_118"/>
+        <dc:title>MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers</dc:title>
+        <dcterms:abstract>Executing machine learning workloads locally on resource constrained microcontrollers (MCUs) promises to drastically expand the application space of IoT. However, so-called TinyML presents severe technical challenges, as deep neural network inference demands a large compute and memory budget. To address this challenge, neural architecture search (NAS) promises to help design accurate ML models that meet the tight MCU memory, latency, and energy constraints. A key component of NAS algorithms is their latency/energy model, i.e., the mapping from a given neural network architecture to its inference latency/energy on an MCU. In this paper, we observe an intriguing property of NAS search spaces for MCU model design: on average, model latency varies linearly with model operation (op) count under a uniform prior over models in the search space. Exploiting this insight, we employ differentiable NAS (DNAS) to search for models with low memory usage and low op count, where op count is treated as a viable proxy to latency. Experimental results validate our methodology, yielding our MicroNet models, which we deploy on MCUs using Tensorﬂow Lite Micro, a standard open-source neural network (NN) inference runtime widely used in the TinyML community. MicroNets demonstrate state-of-the-art results for all three TinyMLperf industry-standard benchmark tasks: visual wake words, audio keyword spotting, and anomaly detection. Models and training scripts can be found at https://github.com/ARM-software/ML-zoo.</dcterms:abstract>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_118">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Banbury et al. - MicroNets Neural Network Architectures for Deploy.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://proceedings.mlsys.org/paper_files/paper/2021/file/c4d41d9619462c534b7b61d1f772385e-Paper.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-07 20:32:43</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2007.01348">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Unlu</foaf:surname>
+                        <foaf:givenName>Hasan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_121"/>
+        <link:link rdf:resource="#item_122"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Hardware Architecture</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Efficient Neural Network Deployment for Microcontroller</dc:title>
+        <dcterms:abstract>Edge computing for neural networks is getting important especially for low power applications and offline devices. TensorFlow Lite and PyTorch Mobile were released for this purpose. But they mainly support mobile devices instead of microcontroller level yet. Microcontroller support is an emerging area now. There are many approaches to reduce network size and compute load like pruning, binarization and layer manipulation i.e. operator reordering. This paper is going to explore and generalize convolution neural network deployment for microcontrollers with two novel optimization proposals offering memory saving and compute efficiency in 2D convolutions as well as fully connected layers. The first one is in-place max-pooling, if the stride is greater than or equal to pooling kernel size. The second optimization is to use ping-pong buffers between layers to reduce memory consumption significantly. The memory savings and performance will be compared with CMSIS-NN framework developed for ARM Cortex-M CPUs. The final purpose is to develop a tool consuming PyTorch model with trained network weights, and it turns into an optimized inference engine(forward pass) in C/C++ for low memory(kilobyte level) and limited computing capable microcontrollers.</dcterms:abstract>
+        <dc:date>2020-07-02</dc:date>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2007.01348</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-07 20:36:23</dcterms:dateSubmitted>
+        <dc:description>arXiv:2007.01348 [cs]</dc:description>
+        <prism:number>arXiv:2007.01348</prism:number>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_121">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>arXiv.org Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2007.01348</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-07 20:36:28</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_122">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://arxiv.org/pdf/2007.01348.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-07 20:36:29</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="https://www.semanticscholar.org/paper/Autonomous-control-of-parafoil-and-payload-systems-Scheuermann/e422b95b1873b2b8dec542f6de8357f82418b77f">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Scheuermann</foaf:surname>
+                        <foaf:givenName>Edward</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_124"/>
+        <dc:title>Autonomous control of parafoil and payload systems using upper surface canopy spoilers</dc:title>
+        <dcterms:abstract>Semantic Scholar extracted view of &quot;Autonomous control of parafoil and payload systems using upper surface canopy spoilers&quot; by Edward Scheuermann</dcterms:abstract>
+        <dc:date>13 May 2015</dc:date>
+        <z:libraryCatalog>Semantic Scholar</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.semanticscholar.org/paper/Autonomous-control-of-parafoil-and-payload-systems-Scheuermann/e422b95b1873b2b8dec542f6de8357f82418b77f</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-09 00:02:25</dcterms:dateSubmitted>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_124">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Semantic Scholar Link</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.semanticscholar.org/paper/Autonomous-control-of-parafoil-and-payload-systems-Scheuermann/e422b95b1873b2b8dec542f6de8357f82418b77f</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2024-04-09 00:02:25</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+</rdf:RDF>
